@@ -1,1 +1,1 @@
-web: gunicorn seosite1.wsgi     xxxxxxxxxxxxxx
+web: gunicorn seosite1.wsgi    

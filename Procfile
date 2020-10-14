@@ -1,0 +1,1 @@
+web: gunicorn seosite1.wsgi

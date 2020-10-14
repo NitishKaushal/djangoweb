@@ -1,0 +1,127 @@
+.navbar{
+    background: #21366b;
+    color:#ffffff;
+    }
+
+
+
+
+.dropdown-item{
+color: #ffffff !important;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+  background-color: #21366b !important;
+
+  position: absolute;
+  }
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+  display: block;
+  }
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {display: block;}
+
+
+
+h2{
+    color:#21366b !important;
+    font-weight: 700;
+}
+h5{
+    color:#21366b !important;
+}
+
+.card{
+    border: 2px solid #21366b;
+    }
+
+
+
+
+
+
+
+
+a{
+     font-size:1.1rem;
+     color: #ffffff;
+    }
+.nav-item1{
+    position:absolute;
+    right:10px;
+}
+
+.hero-post{
+    position:relative;
+    text-align:center;
+    display:block;
+}
+.hero-post-text{
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+    font-weight:700;
+
+}
+.btn{
+    background:#21366b !important;
+    color:#ffffff;
+}
+.follow-us{
+    display:inline-block;
+}
+
+
+
+.social-links{
+     background:#66FCF1 !important;
+     color:#0B0C10 !important;
+     font-size:1.5rem;}
+.primary-color{
+    background:#0B0C10;
+    color:#49b1ff
+}
+.secondary-color{
+    background:#1F2833 !important;
+    color:#66FCF1;}
+
+
+.footer{
+    background:#21366b;
+    color:#ffffff;
+    }
+
+
+/*testimonials*/
+.image-post img{
+    width:100%;
+    height:100%;
+     object-fit:cover;
+}
+.image-post{
+    border-top: 3px solid #21366b;
+}
+
+.card img{
+    width:100%;
+    height:100%
+}
+.card-title{
+    font-weight:700;
+}
+
+.feature img {
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 1px 1px 19px #404040;
+    max-width: 100%;
+    width: auto;
+}

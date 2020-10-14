@@ -1,0 +1,59 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block meta_description%}about the company{%endblock%}
+{%block title%}ABout!!!!!!!!{%endblock%}
+{% block content %}
+
+    <!--HERO SECTION--><!--(py-4 gives padding between the Header & the section created )-->
+    <section class="hero" ><!--this is element of html5 , which tell the google search engine/browser that it's a independent part of web & usually used to group group of posts ,articles together -->
+
+            <div class="row"><!--divides the row into 12 pieces -->
+                <div class="container">
+
+                    <div class="hero-post1 py-1">
+                        <img class="img-fluid " width="100%" src="{%static 'web/img/aboutus.jpg'%}"  alt="Broken!">
+                        <div class="heropost1-text" style="font-size:3.5vw;">
+
+                            <p>About US !</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!--BLOG SECTION -->
+    <section class="blog-posts ">
+        <div class="container">
+            <div class="row py-5">
+
+                <div class="col-sm-4">
+                    <div class="feature ">
+                        <img src="{%static 'web/img/person1.jpg'%}" class="img-fluid" alt="destination -image">
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-8">
+                    <div class="title text-center ">
+                        <h2>About Us</h2>
+
+
+                    {%for post in posts%}
+                            <p>{{post.summary}}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+{% endblock %}
+

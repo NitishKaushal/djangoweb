@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block title%}free!! Audit{%endblock%}
+{% block content %}
+
+
+
+    <!--BLOG SECTION -->
+
+    {% if message_name %}
+    <center><br/><br/><h1>Thanks! {{message_name}}</h1><p>We have recieved your email & will contact you shortly..</p><br/><br/><br/><br/></center>
+    {% else %}
+    <section class="blog-posts ">
+        <div class="container">
+                <div class="row py-5">
+
+                <div class="col-sm-4">
+                    <div class="map py-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110839.1450008923!2d76.74224308567202!3d30.70327681103969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390febb05ee7e45b%3A0xa17a586890ee2175!2sGmada%20Aerocity%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1599371243094!5m2!1sen!2sin" width="350" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-8">
+
+
+                    <form action ="{% url 'proposalinfo'%}" method="post"><!--reverts back to same page-->
+
+                          {% csrf_token %}
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="text" name="message-name" class="form-control" id="exampleFormControlInput1" placeholder="fullname">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" name="message-email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Your Website Url</label>
+                            <input type="text" name="message-url" class="form-control" id="exampleFormControlInput3" placeholder="Website URL">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Example select</label>
+                            <select class="form-control" name="message-service" id="exampleFormControlSelect1">
+                              <option>--Select Service--</option>
+                              <option>Digital Marketing</option>
+                              <option>Search Engine Optimization</option>
+                              <option>Social Media Marketing</option>
+                              <option>Pay Per Click</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Phone Number</label>
+                            <input type="text"  name="message-phoneno"maxlength="20" class="form-control" id="phone_id" placeholder="Phone" onkeyup="limitText(this.form.inquiryPhoneNumber,20)">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <button type="submit" class="btn ">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    {% endif %}
+{% endblock %}

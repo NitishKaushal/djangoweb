@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+
+
+    <!--HERO SECTION--><!--(py-4 gives padding between the Header & the section created )-->
+    <section class="hero" ><!--this is element of html5 , which tell the google search engine/browser that it's a independent part of web & usually used to group group of posts ,articles together -->
+            <div class="container">
+                <div class="row"><!--divides the row into 12 pieces -->
+
+                    <div class="hero-post py-1">
+
+
+                        <img class="img-fluid " src="{%static 'web/img/sd.jpg'%}"  alt="Broken!"><!--Not Working-->
+
+
+
+                        <div class="hero-post-text centered" >
+                            <h1>Search Engine Optimization – SEO </h1>
+                            <p>Grow Your Client Base With Data-Driven and Targeted Strategies</p>
+
+                            <a href="/proposal" class="btn btn-lg active" role="button" aria-pressed="true">GET MY FREE PROPOSAL <i class="fl-button-icon fl-button-icon-after fa fa-angle-double-right" aria-hidden="true"></i></a>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!--BLOG SECTION -->
+    <section class="blog-posts ">
+        <div class="container">
+            <div class="blogtitle text-center py-2"><h2>Our Testimonials</h2></div>
+                <article class="blog-post"><!--adds margin at the bottom of every article-->
+                   <div class="image-post">
+                         <div class="row shadow py-2">
+                             {%for post in posts%}
+                                <div class="col-sm-6 p-0">
+                                     <div class="card p-1" style="height: 18rem!important;">
+                                          <img src="{{post.image.url}}" class="img-fluid" alt="destination -image">
+                                          <div class="card-img-overlay">
+                                            <h5 class="card-title ">{{post.title}}</h5>
+                                          </div>
+                                      </div>
+                                </div>
+                             {% endfor %}
+                         </div>
+                   </div>
+
+                </article>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="custom_testimonial">
+        <div class="container">
+
+            <div class="new-page-hdng-custom text-center py-3">
+             <h2> What Our Clients Are Saying </h2>
+            </div>
+
+
+            <div class="row custom_testimonial_content">
+                <div class="col-sm-4 text-center">
+                    <div class="review-main my-3">
+                        <div class="marci-review">
+                            <img alt="Author" class="img-fluid rounded-circle"  src="{%static 'web/img/sd.jpg'%}">
+                            <p><span class="client_name">Marci Wiersma</span></p>
+                            <p>Broker - About Roatan Real Estate</p>
+                             <p><span class="highlighted">“They do everything they say...no BS”</span> “Thrive is a much needed blessing and exceeded our expectations in every way. They are honest, straightforward, they take care of ALL your needs quickly, they are reliable, you can count on them and most of all, they do everything they say they will do, no BS.”</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="review-main my-3">
+                        <div class="marci-review">
+                            <img alt="Author" class="img-fluid rounded-circle"  src="{%static 'web/img/sd.jpg'%}">
+                            <p><span class="client_name">Marci Wiersma</span></p>
+                            <p>Broker - About Roatan Real Estate</p>
+                             <p><span class="highlighted">“They do everything they say...no BS”</span> “Thrive is a much needed blessing and exceeded our expectations in every way. They are honest, straightforward, they take care of ALL your needs quickly, they are reliable, you can count on them and most of all, they do everything they say they will do, no BS.”</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="review-main my-3">
+                        <div class="marci-review">
+                            <img alt="Author" class="img-fluid rounded-circle"  src="{%static 'web/img/sd.jpg'%}">
+                            <p><span class="client_name">Marci Wiersma</span></p>
+                            <p>Broker - About Roatan Real Estate</p>
+                             <p><span class="highlighted">“They do everything they say...no BS”</span> “Thrive is a much needed blessing and exceeded our expectations in every way. They are honest, straightforward, they take care of ALL your needs quickly, they are reliable, you can count on them and most of all, they do everything they say they will do, no BS.”</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+{% endblock %}

@@ -27,7 +27,7 @@ def auditform(request):
         message = request.POST['message']
 
         #send a email
-        info = "Name" + message_name +'/n'+ "email" +message_email +'/n' + "Service " +message_service+'/n' + "message" + message +'/n'+ "Phone:NO" +message_phoneno
+        info = "Name" + message_name +'\n'+ "email" +message_email +'\n' + "Service " +message_service+'\n' + "message" + message +'\n'+ "Phone:NO" +message_phoneno
         send_mail(
             'Visited by: '+ message_name,#subject
             info, # message

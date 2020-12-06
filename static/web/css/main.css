@@ -75,7 +75,7 @@ h5{
 
 
 @media only screen and (max-width: 600px) {
-  h2 {
+  .hero-post-text h1 {
     font-size: 150px;
   }
 }

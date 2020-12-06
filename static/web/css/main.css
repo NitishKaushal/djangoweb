@@ -77,6 +77,7 @@ h5{
 @media (max-width: 480px) {
   .hero-post-text h1 {
     font-size: 20px;
+    font-weight: 700;
   }
 }
 /*for tablet*/

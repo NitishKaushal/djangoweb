@@ -74,12 +74,12 @@ h5{
 
 
 
-@media only screen and (max-width: 480px) {
+@media screen (max-width: 480px) {
   .hero-post-text h1 {
     font-size: 20px;
   }
 }
-@media only screen (min-width: 481px) and (max-width:800px)  { 
+@media screen (min-width: 481px) and (max-width:800px)  { 
   .hero-post-text h1 {
     font-size: 25px;
   }

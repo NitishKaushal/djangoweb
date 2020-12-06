@@ -1,3 +1,28 @@
+@media only screen and (max-width: 320px) {
+
+   .hero-post-text >p{ 
+      font-size: 2rem; 
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar{
     background: #21366b;
     color:#ffffff;

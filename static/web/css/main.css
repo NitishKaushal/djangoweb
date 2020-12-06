@@ -73,17 +73,43 @@ h5{
 
 
 
-
+/*for mobile*/
 @media (max-width: 480px) {
   .hero-post-text h1 {
     font-size: 20px;
   }
 }
+/*for tablet*/
 @media (min-width: 481px) and (max-width:800px)  { 
   .hero-post-text h1 {
     font-size: 25px;
   }
 }
+/*for mobile*/
+@media (max-width: 480px) {
+  .hero-post-text p {
+    font-size: 16px;
+  }
+}
+/*for tablet*/
+@media (min-width: 481px) and (max-width:800px)  { 
+  .hero-post-text p {
+    font-size: 18px;
+  }
+}
+/*for mobile*/
+@media (max-width: 480px) {
+  .hero-post-text > a >button {
+    font-size: 20px;
+  }
+}
+/*for tablet*/
+@media (min-width: 481px) and (max-width:800px)  { 
+  .hero-post-text > a >button {
+    font-size: 25px;
+  }
+}
+
 
 
 

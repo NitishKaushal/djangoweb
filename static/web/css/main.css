@@ -99,13 +99,13 @@ h5{
 }
 /*for mobile*/
 @media (max-width: 480px) {
-  .hero-post-text > a >button {
+  .hero-post-text > a {
     font-size: 20px;
   }
 }
 /*for tablet*/
 @media (min-width: 481px) and (max-width:800px)  { 
-  .hero-post-text > a >button {
+  .hero-post-text > a {
     font-size: 25px;
   }
 }

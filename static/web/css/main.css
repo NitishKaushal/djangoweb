@@ -77,13 +77,14 @@ h5{
 @media (max-width: 480px) {
   .hero-post-text h1 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 /*for tablet*/
 @media (min-width: 481px) and (max-width:800px)  { 
   .hero-post-text h1 {
     font-size: 25px;
+    font-weight: 700;
   }
 }
 /*for mobile*/

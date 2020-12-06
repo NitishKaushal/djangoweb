@@ -49,7 +49,9 @@ h2{
 h5{
     color:#21366b !important;
 }
-
+.hero {
+    margin-top: 80px;
+}
 
 .hero-post{
     position:relative;

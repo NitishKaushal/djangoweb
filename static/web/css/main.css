@@ -79,7 +79,7 @@ h5{
     font-size: 20px;
   }
 }
-@media only screen (min-width: 481px) and (max-width:800px)    
+@media only screen (min-width: 481px) and (max-width:800px)  { 
   .hero-post-text h1 {
     font-size: 25px;
   }

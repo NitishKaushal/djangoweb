@@ -138,8 +138,8 @@ STATICFILES_DIRS = [
 # Email Settings
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "jyan_email"
-EMAIL_HOST_PASSWORD = "jyan_pass"
+EMAIL_HOST_USER = config("jyan_email")
+EMAIL_HOST_PASSWORD = config("jyan_pass")
 EMAIL_USE_TLS = True
 #EMAIL_USE_SSL = False
 

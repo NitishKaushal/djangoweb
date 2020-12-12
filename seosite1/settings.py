@@ -144,7 +144,7 @@ EMAIL_USE_TLS = True
 #EMAIL_USE_SSL = False
 
 
-# for HOSTING/whitenoise handles the static files
+# for HOSTING/whitenoise handles the static files..
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Activate Django-Heroku.

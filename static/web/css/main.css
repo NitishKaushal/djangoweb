@@ -89,7 +89,7 @@ h5{
 /*for mobile*/
 @media (max-width: 480px) {
   .hero-post-text h1 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
   }
 }

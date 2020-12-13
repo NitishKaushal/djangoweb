@@ -115,7 +115,7 @@ h5{
 /*for mobile*/
 @media (max-width: 480px) {
   .hero-post-text > a {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 /*for tablet*/

@@ -13,6 +13,7 @@
 .navbar{
     color: #21366b;
     background:#ffffff;
+    padding :0px !important;
     
     }
 .navbar a{
